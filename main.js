@@ -4,39 +4,49 @@
 
 /*
 
-Help Save Christmas 
+🎄 🎁 Help Save Christmas 🎁 🎄 
 
-The north pole is in a bit of a mess and Santa needs your help with making sure the elves are matcheed up with their reindeer to gather all your Christmas gifts for Santa sleigh.
+The north pole is in a bit of a mess and Santa🎅 needs your help with making sure the elves🧝 are matcheed up with their reindeer to gather all your Christmas gifts for ready for Christmas day 
+
+Unfortunately, sometimes the elves have been off sick due a nasty bug going around.
+At the start of the day Santa needs to know if a 'Substitute Elf' is needed to replace a sick elf. 
 
 Your task:
 
 You will get two array inputs. 
-   > First Input: an array of Santa's 9 reindeers 
-   reindeers = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen", "Rudolph" ]
-   > Second Input: an array containing Santa's elves
-   elves = ["Dobby", "Daenys", "Plum", "Vaegon", "Candycane", "Chestnut", "Doodles", "Buddy", "Ralphy" ]
+   > First Input: an array containing Santa's 9 reindeers 
+   reindeers = ["Dasher", 
+   "Dancer", 
+   "Prancer", 
+   "Vixen", 
+   "Comet", 
+   "Cupid", 
+   "Donner", 
+   "Blitzen", 
+   "Rudolph" ]
 
-Match up each elf with its reindeer alphabetically (Santa runs a tight sleigh). 
+   > Second Input: an array of objects containing Santa's elves and their assigned reindeer. NOTE: some of the elves might be off sick so may not be on the rota.
+   elves = [ {Elf: "Dobby", Reindeer: "Dasher"},
+      {Elf: "Daenys", Reindeer: "Dancer"},
+      {Elf: "Plum", Reindeer: "Prancer"},
+      {Elf: "Vaegon", Reindeer: "Vixen"},
+      {Elf: "Candycane", Reindeer: "Comet"},
+      {Elf: "Chestnut", Reindeer: "Cupid"},
+      {Elf: "Doodles", Reindeer: "Donner"},
+      {Elf: "Buddy", Reindeer: "Blitzen"},
+      {Elf: "Ralphy", Reindeer: "Rudolph"}]
+      
+Your task is to:
 
-Return the coupled up elves and reindeers in an array of arrays. Remember however that as Santa's main helper, Rudolph must always lead the pack! Make sure he and his Elf pair are at the top of the array. 
+1. match up each reindeer with its assigned elf, remember if an elf is off sick (i.e not in the list) to assign the reindeer a "Substitute Elf"
 
+2. remember to make sure Rudolf with his luminous red nose is leading the reindeer team guiding Santa's sleigh on Christmas Eve
 
+3. order the remaining reindeer alphabetically 
 
-> additional step - put rudolph as the pack leader
-> sub elf (undefined)
+4. Return the coupled up elf and reindeer in an arrays ["reindeer", "elf"] within an array
 
-expected = 
-[
-   ["Blitzen" ,"Buddy"],
-   ["Comet","Candycane"],
-   ["Cupid","Chestnut"],
-   ["Dancer","Daenys"],
-   ["Dasher", "Dobby"],
-   ["Donner" ,"Doodles"],
-   ["Prancer" ,"Plum"],
-   ["Rudolph" ,"Ralphy"],
-   ["Vixen" ,"Vaegon"],
-]
+Remember Santa🎅 runs a tight sleigh!
 
 */
 
@@ -44,16 +54,4 @@ expected =
 
 export default function elfReindeerCouples(reindeers, elves) {
   // Your code goes here
-  const output = [
-    ["Blitzen", "Buddy"],
-    ["Comet", "Candycane"],
-    ["Cupid", "Chestnut"],
-    ["Dancer", "Daenys"],
-    ["Dasher", "Dobby"],
-    ["Donner", "Doodles"],
-    ["Prancer", "Plum"],
-    ["Rudolph", "Ralphy"],
-    ["Vixen", "Vaegon"],
-  ];
-  return output;
 }
